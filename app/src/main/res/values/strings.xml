@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">CRHelper</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_teachers">teachersActivity</string>
+    <string name="title_activity_assignment">assignmentActivity</string>
+
+    <string name="title_section1">Section 1</string>
+    <string name="title_section2">Section 2</string>
+    <string name="title_section3">Section 3</string>
+
+<!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_activity_timetable">timetable</string>
+    <string name="title_activity_attendance">attendance</string>
+    <string name="title_activity_syllabus">syllabus</string>
+    <string name="title_activity_stu_login_activity">stu_login_activity</string>
+    <string name="Student">Student</string>
+    <string name="Teacher">Teacher</string>
+</resources>

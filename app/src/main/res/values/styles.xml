@@ -1,0 +1,10 @@
+<resources>
+
+    <!-- Base application theme. -->
+    android:theme="@android:style/Theme.NoTitleBar">
+
+    <style name="AppTheme" parent="android:Theme.DeviceDefault.Dialog.NoActionBar">
+    <!-- theme customizations -->
+    </style>
+
+</resources>
