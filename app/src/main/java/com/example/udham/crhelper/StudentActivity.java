@@ -14,21 +14,22 @@ import android.widget.TextView;
 
 public class StudentActivity extends Activity {
 
-    TextView tv;
+    TextView tv1,tv2,tv3;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_student);
+        addListenerOnButton();
     }
 
     public void addListenerOnButton() {
 
         final Context context = this;
 
-        tv= (TextView) findViewById(R.id.att_text);
+        tv1 = (TextView) findViewById(R.id.att_text);
 
-        tv.setOnClickListener(new View.OnClickListener() {
+        tv1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
@@ -38,7 +39,32 @@ public class StudentActivity extends Activity {
             }
         });
 
+        tv2 = (TextView) findViewById(R.id.sull_text);
+
+        tv2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent intent = new Intent(context, syllabus.class);
+                startActivity(intent);
+
+            }
+        });
+
+        tv3 = (TextView) findViewById(R.id.assign_text);
+
+        tv3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent intent = new Intent(context, assignmentActivity.class);
+                startActivity(intent);
+
+            }
+        });
+
 
     }
+
 
 }

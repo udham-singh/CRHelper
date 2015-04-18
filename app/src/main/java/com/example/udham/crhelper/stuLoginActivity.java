@@ -6,7 +6,9 @@ import android.annotation.TargetApi;
 import android.app.Activity;
 import android.app.LoaderManager.LoaderCallbacks;
 import android.content.ContentResolver;
+import android.content.Context;
 import android.content.CursorLoader;
+import android.content.Intent;
 import android.content.Loader;
 import android.database.Cursor;
 import android.net.Uri;
@@ -53,10 +55,12 @@ public class stuLoginActivity extends Activity implements LoaderCallbacks<Cursor
     private View mProgressView;
     private View mLoginFormView;
 
+    Button b1;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_stu_login);
+        addListenerOnButton();
 
         // Set up the login form.
         mEmailView = (AutoCompleteTextView) findViewById(R.id.email);
@@ -84,6 +88,25 @@ public class stuLoginActivity extends Activity implements LoaderCallbacks<Cursor
 
         mLoginFormView = findViewById(R.id.login_form);
         mProgressView = findViewById(R.id.login_progress);
+    }
+
+    public void addListenerOnButton() {
+
+        final Context context = this;
+
+        b1 = (Button) findViewById(R.id.email_sign_in_button);
+
+        b1.setOnClickListener(new OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent intent = new Intent(context, StudentActivity.class);
+                startActivity(intent);
+
+            }
+        });
+
+
     }
 
     private void populateAutoComplete() {
