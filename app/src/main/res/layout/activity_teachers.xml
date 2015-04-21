@@ -67,14 +67,14 @@
             android:src="@drawable/classicon" />
 
         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
             android:textAppearance="?android:attr/textAppearanceMedium"
             android:text="Classes"
             android:layout_marginLeft="50dp"
             android:layout_marginStart="50dp"
             android:layout_marginTop="30dp"
-            android:id="@+id/att_text"
+            android:id="@+id/class_text"
 
             android:textSize="30sp"
             android:textColor="#607D8B" />
@@ -96,8 +96,8 @@
             android:src="@drawable/syllabus" />
 
         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
             android:textAppearance="?android:attr/textAppearanceMedium"
             android:text="Syllabus"
             android:layout_marginLeft="40dp"
@@ -106,7 +106,8 @@
             android:id="@+id/sull_text"
 
             android:textSize="30sp"
-            android:textColor="#607D8B" />
+            android:textColor="#607D8B"
+            android:onClick="@string/title_activity_syllabus" />
     </LinearLayout>
 
 
@@ -125,14 +126,14 @@
             android:src="@drawable/tt" />
 
         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
             android:textAppearance="?android:attr/textAppearanceMedium"
             android:text="Time Table"
             android:layout_marginLeft="40dp"
             android:layout_marginStart="40dp"
             android:layout_marginTop="30dp"
-            android:id="@+id/assign_text"
+            android:id="@+id/tt_text"
 
             android:textSize="30sp"
             android:textColor="#607D8B" />
@@ -155,17 +156,18 @@
             android:src="@drawable/profile" />
 
         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
             android:textAppearance="?android:attr/textAppearanceMedium"
             android:text="Student Info."
             android:layout_marginStart="40dp"
             android:layout_marginLeft="40dp"
             android:layout_marginTop="30dp"
-            android:id="@+id/other_text"
+            android:id="@+id/stu_info_text"
 
             android:textSize="30sp"
-            android:textColor="#607D8B" />
+            android:textColor="#607D8B"
+            android:onClick="@string/title_activity_stu_info" />
     </LinearLayout>
 
 </LinearLayout>

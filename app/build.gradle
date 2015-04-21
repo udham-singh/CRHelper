@@ -6,7 +6,7 @@ android {
 
     defaultConfig {
         applicationId "com.example.udham.crhelper"
-        minSdkVersion 19
+        minSdkVersion 21
         targetSdkVersion 21
         versionCode 1
         versionName "1.0"
@@ -23,5 +23,6 @@ dependencies {
     compile fileTree(include: ['*.jar'], dir: 'libs')
     compile 'com.android.support:appcompat-v7:22.0.0'
     compile 'com.android.support:support-v4:22.0.0'
-    compile 'com.google.android.gms:play-services:6.5.87'
+    compile project(':bolts-android-1.2.0')
+    compile project(':Parse-1.9.1')
 }

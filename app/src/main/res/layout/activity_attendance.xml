@@ -9,6 +9,7 @@
         android:layout_width="match_parent"
         android:layout_height="80dp"
         android:background="#3F51B5"
+        android:elevation="10dp"
         android:orientation="horizontal">
 
         <ImageView

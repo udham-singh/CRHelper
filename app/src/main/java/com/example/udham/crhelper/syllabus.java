@@ -1,12 +1,13 @@
 package com.example.udham.crhelper;
 
+import android.app.Activity;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 
 
-public class syllabus extends ActionBarActivity {
+public class syllabus extends Activity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

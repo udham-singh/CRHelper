@@ -19,4 +19,8 @@
     <string name="title_activity_stu_login_activity">stu_login_activity</string>
     <string name="Student">Student</string>
     <string name="Teacher">Teacher</string>
+    <string name="title_activity_login">login</string>
+    <string name="title_activity_sign_up">sign_up</string>
+    <string name="title_activity_stu_info">stuInfo</string>
+    <string name="title_activity_classes">classes</string>
 </resources>

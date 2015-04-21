@@ -1,1 +1,1 @@
-include ':app'
+include ':app', ':Parse-1.9.1', ':bolts-android-1.2.0'

@@ -13,13 +13,70 @@ import android.widget.TextView;
 
 public class teachersActivity extends Activity {
 
-    TextView tv;
+    TextView tv1,tv2,tv3,tv4;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_teachers);
+        addListenerOnButton();
     }
+
+
+    public void addListenerOnButton() {
+
+        final Context context = this;
+
+        tv1= (TextView) findViewById(R.id.class_text);
+
+        tv1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent intent = new Intent(context, attendance.class);
+                startActivity(intent);
+
+            }
+        });
+
+        tv2= (TextView) findViewById(R.id.sull_text);
+
+        tv2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent intent = new Intent(context, syllabus.class);
+                startActivity(intent);
+
+            }
+        });
+
+        tv3= (TextView) findViewById(R.id.tt_text);
+
+        tv3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent intent = new Intent(context, assignmentActivity.class);
+                startActivity(intent);
+
+            }
+        });
+
+
+        tv4= (TextView) findViewById(R.id.stu_info_text);
+
+        tv4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent intent = new Intent(context, stuInfo.class);
+                startActivity(intent);
+
+            }
+        });
+    }
+
 
 
     }

@@ -76,7 +76,8 @@
             android:id="@+id/att_text"
 
             android:textSize="30sp"
-            android:textColor="#607D8B" />
+            android:textColor="#607D8B"
+            android:onClick="@string/title_activity_attendance" />
     </LinearLayout>
 
 
@@ -105,7 +106,8 @@
             android:id="@+id/sull_text"
 
             android:textSize="30sp"
-            android:textColor="#607D8B" />
+            android:textColor="#607D8B"
+            android:onClick="@string/title_activity_syllabus" />
     </LinearLayout>
 
 
@@ -134,7 +136,8 @@
             android:id="@+id/assign_text"
 
             android:textSize="30sp"
-            android:textColor="#607D8B" />
+            android:textColor="#607D8B"
+            android:onClick="@string/title_activity_assignment" />
     </LinearLayout>
 
 

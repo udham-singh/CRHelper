@@ -8,7 +8,7 @@ import android.view.View.OnClickListener;
 import android.view.View;
 import android.widget.Button;
 
-
+import com.parse.Parse;
 
 
 public class MainActivity extends Activity {
@@ -20,6 +20,9 @@ public class MainActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         addListenerOnButton();
+        // Enable Local Datastore.
+        Parse.enableLocalDatastore(this);
+        Parse.initialize(this, "Egsn9KbBiDHrcXa784wgbBHlZJebpmEoydC13ivt", "4duy7HwfneN5y1ZhEUipAjCp6umoDMiOJE7aVTQV");
     }
 
     public void addListenerOnButton() {

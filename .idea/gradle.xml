@@ -9,7 +9,9 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/Parse-1.9.1" />
             <option value="$PROJECT_DIR$/app" />
+            <option value="$PROJECT_DIR$/bolts-android-1.2.0" />
           </set>
         </option>
       </GradleProjectSettings>
