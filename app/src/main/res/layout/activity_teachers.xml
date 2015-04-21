@@ -77,7 +77,8 @@
             android:id="@+id/class_text"
 
             android:textSize="30sp"
-            android:textColor="#607D8B" />
+            android:textColor="#607D8B"
+            android:linksClickable="false" />
     </LinearLayout>
 
 
